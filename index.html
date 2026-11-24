@@ -45,6 +45,9 @@ h3{font-size:.9rem;color:var(--accent);font-weight:600;letter-spacing:.25em;marg
 .quote{text-align:center;color:var(--sub);font-size:.9rem;margin:40px 0 0;font-style:italic}
 body{background:radial-gradient(ellipse at 12% 0%,rgba(185,166,214,.24),transparent 55%),radial-gradient(ellipse at 95% 38%,rgba(124,147,184,.22),transparent 50%),radial-gradient(ellipse at 8% 85%,rgba(194,161,90,.14),transparent 50%),var(--bg)}
 .hero{overflow:hidden}
+.r{color:#d93a3a!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .r{color:#ff7b7b!important}}
+:root[data-theme="dark"] .r{color:#ff7b7b!important}
 .hero::before{content:"";position:absolute;inset:-10%;background:radial-gradient(ellipse at 30% 75%,rgba(255,255,255,.32),transparent 60%);animation:mist 16s ease-in-out infinite alternate}
 @keyframes mist{to{transform:translateX(10%) scale(1.12);opacity:.5}}
 .divider{display:flex;align-items:center;gap:14px;letter-spacing:.4em}
@@ -113,9 +116,9 @@ tr.day td{font-size:12.5px;letter-spacing:.2em}
 <tr><th>時間</th><th>地點</th><th>時長</th><th>交通</th><th>費用 (NTD)</th></tr>
 <tr class="day"><td colspan="5">第一日 ・ 啟程</td></tr>
 <tr><td>11:00~11:30</td><td>台中火車站</td><td>30 分鐘</td><td>—</td><td>—</td></tr>
-<tr><td>11:48~12:31</td><td>台中 → 竹南火車站</td><td>43 分鐘</td><td>自強號 116（往七堵）</td><td>223</td></tr>
-<tr><td>12:31~13:00</td><td>竹南火車站（東站）</td><td>29 分鐘</td><td>等待</td><td>—</td></tr>
-<tr><td>13:00~13:52</td><td>竹南東站 → 南庄國中</td><td>52 分鐘</td><td>5608A 公車</td><td>90</td></tr>
+<tr><td>11:48~12:33</td><td>台中 → 竹南火車站</td><td>43 分鐘</td><td>自強號 116（往七堵）</td><td>223</td></tr>
+<tr><td>12:33~13:00</td><td>竹南火車站（東站）</td><td class="r">27 分鐘</td><td>等待</td><td>—</td></tr>
+<tr><td class="r">13:00~14:00</td><td>竹南東站 → 南庄國中</td><td class="r">60 分鐘</td><td class="r">5805A 公車</td><td class="r">92</td></tr>
 <tr><td>14:15~14:50</td><td>南庄國中 → 鹿場文建站</td><td>35 分鐘</td><td>幸福巴士</td><td>50</td></tr>
 <tr><td>14:50~15:50</td><td>鹿場文建站 → 加里山登山口</td><td>1 小時<br>（走 42 分＋休息 18 分）</td><td>徒步 3.2 公里</td><td>—</td></tr>
 <tr><td>15:50~17:10</td><td>登山口 → 山屋</td><td>1 小時 20 分（含休息）</td><td>徒步 1.5 公里</td><td>—</td></tr>
@@ -126,11 +129,10 @@ tr.day td{font-size:12.5px;letter-spacing:.2em}
 <tr><td>10:00~10:50</td><td>三角點</td><td>50 分鐘</td><td>—</td><td>—</td></tr>
 <tr><td>10:50~13:20</td><td>三角點 → 山屋</td><td>2 小時 30 分</td><td>—</td><td>—</td></tr>
 <tr><td>13:20~13:50</td><td>山屋・整理行李</td><td>30 分鐘</td><td>—</td><td>—</td></tr>
-<tr><td>13:50~16:30</td><td>山屋 → 鹿場文建站</td><td>2 小時 20 分</td><td>徒步 3.2 公里</td><td>—</td></tr>
+<tr><td>13:50~16:30</td><td>山屋 → 鹿場文建站</td><td>2 小時 20 分</td><td>徒步 4.7 公里</td><td>—</td></tr>
 <tr><td>16:30~17:05</td><td>鹿場文建站 → 南庄國中</td><td>35 分鐘</td><td>幸福巴士</td><td>50</td></tr>
-<tr><td>17:20~18:20</td><td>南庄國中 → 竹南火車站</td><td>1 小時</td><td>5608A 公車</td><td>90</td></tr>
-<tr><td>18:29~19:18</td><td>竹南 → 台中火車站</td><td>49 分鐘</td><td>自強號 139（往潮州）</td><td>223</td></tr>
-<tr><td>19:20~19:40</td><td>台中火車站 → 興大二村</td><td>20 分鐘</td><td>Uber（2 台車）</td><td>26~42／人<br>180~300 總共</td></tr>
+<tr><td class="r">17:20~18:10</td><td>南庄國中 → 竹南火車站</td><td class="r">50 分鐘</td><td class="r">5805A 公車</td><td>90</td></tr>
+<tr><td class="r">18:21~19:04</td><td>竹南 → 台中火車站</td><td>43 分鐘</td><td>自強號 139（往潮州）</td><td>223</td></tr>
 </table></div>
 </section>
 
